@@ -21,7 +21,7 @@ $email = $_POST['elpastas'];
 $password = $_POST['slaptazodis'];
 $stmt->execute();
 
-echo "New record created successfully.";
+echo "Jūsų paskyra sėkmingai sukurta.";
 } catch (PDOException $e) {
 echo "Error: " . $e->getMessage();
 }

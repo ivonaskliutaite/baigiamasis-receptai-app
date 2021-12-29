@@ -11,11 +11,11 @@ $sql = "SELECT COUNT(*)
 FROM mano_db.kontaktai
 WHERE email= '{$email}' AND password = '{$form_password}'";
 
-foreach ($conn->query($sql) as $row) {
-    $row['COUNT(*)'];
+foreach ($conn->query($sql) as $kiek) {
+    $kiek['COUNT(*)'];
 }
 
-if($row['COUNT(*)'] === 1) {
+if($kiek['COUNT(*)'] === 1) {
     echo "<strong>Prisijungei!</strong>";
 } else {
     echo "<strong>Nepavyko!</strong>";

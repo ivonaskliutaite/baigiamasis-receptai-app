@@ -24,7 +24,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             . '<br/>'
             . 'Susisieksime su Jumis kaip imanoma greiciau.';
 
-        $sendmessage = wordwrap($message, 70); //iki 70 zenklu
+        $sendmessage = wordwrap($message, 200); //iki 70 zenklu
 
         mail("ivonaskliutaite@gmail.com", $subject, $sendmessage, $headers);
         echo "Susisieksime su Jumis kaip imanoma greiciau.";

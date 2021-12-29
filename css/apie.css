@@ -4,6 +4,7 @@ main {
     margin:5vh auto;
     color: white;
     font-size: 4vh;
+    height: 60vh;
 }
 
 .error{

@@ -527,7 +527,7 @@ footer .linkai{
     height: 30%;
     border-radius: 15px;
     margin-bottom: 10em;
-    margin-right: 15vh;
+    margin-right: 5vh;
   }
 
   .search-div button{
@@ -549,7 +549,7 @@ footer .linkai{
     color: white;
     font-size: 5vh;
     text-align: left;
-    margin-left: 6em;
+    margin-left: 10em;
   }
   .receptu-sarasas {
     display: grid;
@@ -600,6 +600,8 @@ footer .linkai{
     cursor: pointer;
   }
 
+
+
   .closeIcon {
     display: none;
   }
@@ -613,7 +615,7 @@ footer .linkai{
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: black;
+    background: #00303f;
     color: white;
     list-style: none;
     padding-top: 4rem;
