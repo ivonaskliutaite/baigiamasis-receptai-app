@@ -1,0 +1,74 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+main {
+    padding: 0 10vh;
+}
+
+input {
+    line-height: normal;
+    padding-top: 3vh;
+}
+
+textarea {
+    overflow: auto;
+    color: #00303f;
+    font: inherit;
+    margin: 0;
+}
+
+form {
+    border: solid 3px #00303f;
+    margin: 0 auto;
+    max-width: 650px;
+    max-height: 650px;
+    position: relative;
+    width: 100%;
+    padding: 45px;
+    margin-top: 13vh;
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    padding-bottom: 7vh;
+}
+
+input, textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #00303f;
+    color: #00303f;
+    font-size: 1.000em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.button-recipe {
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    display: none;
+}
+
+.button-recipe:hover {
+ background-color: #00303f;
+    color: #f1dabf;
+    cursor: pointer;
+}

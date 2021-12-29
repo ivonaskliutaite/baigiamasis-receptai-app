@@ -1,26 +1,18 @@
-/*function toggleFunction() {
-    let x = document.getElementsById("toggling");
-    if (x.getAttribute('href') == 'css.css') {
-        x.getAttribute('href') = 'block';
-    } else {
-        x.getAttribute('href') = 'none';
-    }
-}
-*/
-
-/*
-const date = getElementById('date')
-const currentYear = new Date().getFullYear()
-date.textContent = currentYear;
-*/
+const date = new Date();
+let metai = date.getFullYear();
+document.getElementById("date").innerHTML = metai;
 
 
-const menu = document.querySelector(".linkai");
-const menuItems = document.querySelectorAll(".linkas");
+
+
+//istraukiam artimiausia pagal pavadinima class/id/itt
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".fa-window-close");
-const menuIcon = document.querySelector(".fa-bars");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
+//f-cija :
 function toggleMenu() {
     if (menu.classList.contains("showMenu")) {
         menu.classList.remove("showMenu");
@@ -33,6 +25,7 @@ function toggleMenu() {
     }
 }
 
+//prijungia prie hamburgerio toggle menu kai click'as bus
 hamburger.addEventListener("click", toggleMenu);
 
 menuItems.forEach(
@@ -40,3 +33,4 @@ menuItems.forEach(
         menuItem.addEventListener("click", toggleMenu);
     }
 )
+

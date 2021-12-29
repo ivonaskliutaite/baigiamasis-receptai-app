@@ -15,31 +15,18 @@ body {
     background-image: linear-gradient(rgba(0, 48, 63, 0.84), rgba(202, 228, 219, 0.84) 50%);
     border-radius: 15px;
     box-shadow: 5px 20px 50px #000;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
 }
 
 .registruokis {
-    padding-top: 25%;
     border-style: solid 2px black;
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-label {
-    color: #fff;
-    font-size: 2em;
-    justify-content: center;
-    display: flex;
-    margin: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: .5s ease-in-out;
-}
 
 input {
     width: 65%;
-    height: 20px;
     background: #f1dabf;
     display: flex;
     justify-content: center;
@@ -49,9 +36,15 @@ input {
     text-align: center;
 }
 
-button {
+
+form input[type=submit]:hover {
+    background: #296060;
+    color: #f1dabf;
+}
+
+form input[type="submit"]{
     width: 60%;
-    height: 40px;
+    height: 35px;
     margin: 10px auto;
     justify-content: center;
     display: block;
@@ -64,16 +57,42 @@ button {
     border-radius: 5px;
     transition: .2s ease-in;
     cursor: pointer;
+    text-align: center;
 }
 
-button:hover {
-    background: #296060;
+.login_1{
+    margin-top: 30px;
+}
+
+.main h3{
+    text-align: center;
+    margin-top: 13vh;
+    font-size: 40px;
+    color: #d4e4ca;
+}
+.home h4{
+    text-align: center;
+    color: #00303f;
+
+    font-size: 20px;
+}
+
+.home  {
+    border: solid 2px #00303f;
+    border-radius: 30px;
+    width: 15vh;
+    margin:3vh auto;
+    height: 7vh;
+    padding-bottom: 1.5vh;
+    color: #00303f;
+    letter-spacing: 0.5px;
+}
+
+.home h4 a{
+    color: #031424;
+    text-decoration: underline;
+}
+
+.home h4 a:hover{
     color: #f1dabf;
 }
-
-.login {
-    padding-top: 40%;
-}
-
-
-

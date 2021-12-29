@@ -32,11 +32,24 @@ body {
   border-radius: 50%;
 }
 
+
+.linkas{
+  display: block;
+  color: #d4e4ca;
+  letter-spacing: 0.6rem;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.linkai a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 .btn_header {
   background-color: #7a9d96;
   padding: 0.25em;
   margin: 1em;
-  font-size: 1.25 em;
 }
 
 .btn_header .fa {
@@ -99,9 +112,6 @@ main {
   width: 90vw;
   max-width: 1200px;
   margin: 0 auto;
-  /*visada bus centruota*/
-  padding-top: 2 rem;
-  min-height: calc(100vh - (6rem + 4rem));
 }
 
 .hero {
@@ -149,7 +159,6 @@ main {
   background-color: initial;
   background-image: linear-gradient(#7a9d96, #00303f 50%);
   border-radius: 100px;
-  border-width: 40%;
   box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(0, 48, 63, 0.4) 0 8px 12px;
   color: azure;
   cursor: pointer;
@@ -231,7 +240,6 @@ main {
   background-color: initial;
   background-image: linear-gradient(rgba(0, 48, 63, 0.84), rgba(202, 228, 219, 0.84) 50%);
   border-radius: 100px;
-  border-width: 40%;
   box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(0, 48, 63, 0.4) 0 8px 12px;
   color: black;
   cursor: pointer;
@@ -324,17 +332,6 @@ footer .linkai a:hover {
   color: #00303f;
   border: solid 3px #00303f;
 }
-.hamburger {
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.8rem;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
-  font-size: 1em;
-  border-radius: 10px;
-}
 
 /*SCREEN MAX 600PX*/
 
@@ -347,11 +344,39 @@ footer .linkai a:hover {
   display: flex;
   justify-content: space-around;
 }
-  .fa-window-close {
+
+footer .linkai{
+  display: none;
+}
+
+  .menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+
+  .closeIcon {
     display: none;
   }
 
-  .linkai{
+  .menu {
     position: fixed;
     transform: translateY(-100%);
     transition: transform 0.2s;
@@ -360,30 +385,15 @@ footer .linkai a:hover {
     right: 0;
     bottom: 0;
     z-index: 99;
-    color: #d4e4ca;
+    background: black;
+    color: white;
     list-style: none;
-    background-color: #00303f;
-    height: 45vh;
-    padding-top: 4em;
-  }
-
-  .linkas{
-    display: block;
-    color: #d4e4ca;
-    letter-spacing: 0.6rem;
-    font-weight: bold;
-    font-size: medium;
+    padding-top: 4rem;
   }
 
   .showMenu {
     transform: translateY(0);
   }
-
-  .linkai a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
   .hero {
     height: 30vh;
     position: relative;
@@ -460,8 +470,8 @@ footer .linkai a:hover {
 
   .receptai {
     display: grid;
-
   }
+
 
 }
 /* Small devices (portrait tablets and large phones, 600px to 991px) */
@@ -470,7 +480,7 @@ footer .linkai a:hover {
 
   .hero-text h1 {
     padding-top: 0.2em;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .hero {
@@ -478,7 +488,7 @@ footer .linkai a:hover {
     height: 30vh;
     top: 0;
     left: 0;
-    border-radius: 100% 0% 100% 0% / 18% 86% 14% 82%;
+    border-radius: 100% 0 100% 0 / 18% 86% 14% 82%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -489,7 +499,7 @@ footer .linkai a:hover {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4);
-    border-radius: 100% 0% 100% 0% / 18% 86% 14% 82%;
+    border-radius: 100% 0 100% 0 / 18% 86% 14% 82%;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0.5em;
@@ -502,7 +512,7 @@ footer .linkai a:hover {
     font-family: "Courgette", cursive;
     color: #d3ffb8;
     line-height: 2em;
-    margin-left: 8vh;
+    margin-left: 6vh;
     padding-top: 1em;
   }
 
@@ -513,10 +523,11 @@ footer .linkai a:hover {
     position: relative;
     float: none;
     text-align: center;
-    width: 12vh;
-    height: 35%;
+    width: 11vh;
+    height: 30%;
     border-radius: 15px;
-    margin-bottom: 8em;
+    margin-bottom: 10em;
+    margin-right: 15vh;
   }
 
   .search-div button{
@@ -561,9 +572,59 @@ footer .linkai a:hover {
   .tags-container {
     display: none;
   }
-
+/*
   .fa-window-close {
     display: none;
+  } */
+
+  .menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 10px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+  .hero {
+    height: 30vh;
+    position: relative;
   }
 
   .tags-container {
@@ -573,16 +634,9 @@ footer .linkai a:hover {
     display: flex;
     justify-content: space-around;
   }
+
   .linkai{
     display: none;
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
     color: #d4e4ca;
     list-style: none;
     background-color: #00303f;
@@ -596,10 +650,6 @@ footer .linkai a:hover {
     letter-spacing: 0.6rem;
     font-weight: bold;
     font-size: medium;
-  }
-
-  .showMenu {
-    transform: translateY(0);
   }
 
   .linkai a:hover {
@@ -665,7 +715,7 @@ footer .linkai a:hover {
     height: 30vh;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    border-radius: 100% 0% 100% 0% / 18% 86% 14% 82%;
+    border-radius: 100% 0 100% 0 / 18% 86% 14% 82%;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -684,7 +734,7 @@ footer .linkai a:hover {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4);
-    border-radius: 100% 0% 100% 0% / 18% 86% 14% 82%;
+    border-radius: 100% 0 100% 0 / 18% 86% 14% 82%;
   }
 
   .hero-text h1 {
@@ -736,7 +786,6 @@ footer .linkai a:hover {
     order: 2;
     margin: auto;
     column-gap: 3em;
-
   }
 
   .receptu-sarasas a {
@@ -767,14 +816,12 @@ footer .linkai a:hover {
     display: grid;
     background-image: linear-gradient(#7a9d96, #00303f 50%);
     border-radius: 100px;
-    border-width: 40%;
     color: azure;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     justify-content: center;
-    letter-spacing: 0.4em;
     text-decoration: none;
     width: 20vh;
     margin: 20px 0;
@@ -870,8 +917,5 @@ footer .linkai a:hover {
     font-size: 2em;
     color: #00303f;
     opacity: 0.3;
-  }
-  .hamburger {
-    display: none;
   }
 }

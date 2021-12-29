@@ -8,21 +8,33 @@
     <title>Login</title>
 </head>
 <body>
+
+
 <div class="main">
+    <div>
+        <h3>Uzsiregistruokite! &#8595;</h3>
+    </div>
     <div class="registruokis">
+
         <form action="insert_data.php" class="login" method="post">
             <input type="text" name="vardas" placeholder="Jusu vardas" required="">
             <input type="email" name="elpastas" placeholder="Jusu el. pastas" required="">
             <input type="password" name="slaptazodis" placeholder="Slaptazodis" required="">
-            <button value="saugoti">Uzsiregistruokite!</button>
+            <input type="submit" value="Uzsiregistruokite"></input>
         </form>
 
-        <form action="insert_data.php" class="login" method="post">
+        <form id="form_login" action="login.php" class="login login_1" method="post">
             <input type="email" name="elpastas" placeholder="Jusu el. pastas" required="">
             <input type="password" name="slaptazodis" placeholder="Slaptazodis" required="">
-            <button value="prisijunkite">Prisijunkite!</button>
+            <input type="submit" value="Prisijunkite"></input>
         </form>
     </div>
+
+    <div class="home">
+        <h4>Grizti i <a href="index.html">titulini</a></h4>
+    </div>
 </div>
+
+
 </body>
 </html>

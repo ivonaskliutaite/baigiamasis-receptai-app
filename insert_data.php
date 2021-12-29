@@ -17,8 +17,8 @@ $stmt->bindParam(':email', $email);
 $stmt->bindParam(':password', $password);
 
 $name = $_POST['vardas'];
-$password = $_POST['elpastas'];
-$email = $_POST['slaptazodis'];
+$email = $_POST['elpastas'];
+$password = $_POST['slaptazodis'];
 $stmt->execute();
 
 echo "New record created successfully.";

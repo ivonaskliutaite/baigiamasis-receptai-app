@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Receptai</title>
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/css.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,30 +14,29 @@
 <body>
 
 <nav class="titulinis">
-<div class="navigacija">
-    <div class="nav">
-        <div>
-            <a href="index.html" class="logo_img">
-                <img src="images/logo.png" alt="logo"/>
-            </a>
+    <div class="navigacija">
+        <div class="nav">
+            <div>
+                <a href="index.html" class="logo_img">
+                    <img src="images/logo.png" alt="logo" />
+                </a>
+            </div>
+            <a href="./login.html" class="login"><i class="fa fa-sign-in"></i>
+                <p>Prisijunkite!</p></a>
+
+            <button type="button" class="btn_header btn hamburger">
+                <i class="menuIcon fa fa-bars"></i>
+                <i class="closeIcon fa-times-circle"></i>
+            </button>
         </div>
+    <div class="linkai menu">
+        <a href="index.html" class="linkas menuItem">Titulinis</a>
+        <a href="apie.html" class="linkas menuItem">Apie</a>
+        <a href="kategorijos.html" class="linkas menuItem">Kategorijos</a>
+        <a href="receptai.html" class="linkas menuItem">Receptai</a>
+        <a href="kontaktai.html" class="linkas menuItem">Kontaktai</a>
     </div>
-</div>
-<div class="linkai">
-    <a href="index.html" class="linkas">Titulinis</a>
-    <a href="apie.html" class="linkas">Apie</a>
-    <a href="ingridientai.html" class="linkas">Kategorijos</a>
-    <a href="receptai.html" class="linkas">Receptai</a>
-    <a href="kontaktai.html" class="linkas">Kontaktai</a>
-</div>
-    <a href="./login.html" class="login"><i class="fa fa-sign-in"></i>
-        <p>Prisijunkite!</p></a>
-    <button type="button" class="hamburger btn">
-        <i class="fa fa-bars"></i>
-        <i class="fa fa-window-close"></i>
-    </button>
-</div>
-</div>
+    </div>
 </nav>
 
 <main>
@@ -49,7 +47,7 @@
             <h2>Į RECEPTŲ pasaulį! &#129473</h2>
         </div>
         <div class="search-div">
-            <input type="text" class="search" placeholder="Ko ieškote?"/>
+            <input type="text" class="search" placeholder="Ko ieškote?">
             <button>&#128269;</button>
         </div>
     </div>
@@ -60,7 +58,7 @@
         <div class="tags-container">
             <h4>Receptų kategorijos</h4>
             <div class="tags-list">
-                <a href="tag-template.html">Saldūs <i class="fa fa-birthday-cake"></i></a>
+                <a href="tag-template.html">Saldūs</a>
                 <a href="tag-template.html">Pusryčiai</a>
                 <a href="tag-template.html">Pietūs</a>
                 <a href="tag-template.html">Vakarienė</a>
@@ -68,7 +66,7 @@
             </div>
         </div>
         <div class="receptu-sarasas">
-            <a href="single-recipe.html" class="recipe">
+            <a href="bandeles.html" class="recipe">
                 <img
                         src="./images/bandeles.jpg"
                         alt="bandeles"
@@ -178,7 +176,7 @@
         <a href="instagram.com" class="fa fa-instagram"></a>
         <a href="linkedin.com" class="fa fa-linkedin"></a>
     </div>
-    <div class="linkai" id="toggling">
+    <div class="linkai">
         <a href="index.html" class="linkas">Titulinis</a>
         <a href="apie.html" class="linkas">Apie</a>
         <a href="ingridientai.html" class="linkas">Kategorijos</a>
